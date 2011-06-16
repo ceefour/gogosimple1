@@ -1,0 +1,18 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+	<bean id="simpleCommand" class="gogosimple1.SimpleCommand" />
+	<service ref="simpleCommand" auto-export="all-classes">
+		<service-properties>
+			<entry key="osgi.command.scope"><value>simple</value></entry>
+			<entry key="osgi.command.function">
+				<array value-type="java.lang.String">
+					<value>walk</value>
+					<value>talk</value>
+				</array>
+			</entry>
+		</service-properties>
+	</service>
+
+</blueprint>
