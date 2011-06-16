@@ -10,6 +10,7 @@
 				<array value-type="java.lang.String">
 					<value>walk</value>
 					<value>talk</value>
+					<value>hello</value>
 				</array>
 			</entry>
 		</service-properties>
